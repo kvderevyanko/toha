@@ -1,3 +1,6 @@
+## Клонируем репозиторий
+    git clone https://github.com/kvderevyanko/toha.git .
+
 ## Настройки хоста
 
     <VirtualHost *:80>
@@ -47,7 +50,7 @@
     sudo a2enmod rewrite 
     sudo service apache2 restart
 
-###Проверяем зависимости
+### Проверяем зависимости
     php requirements.php
 
 ### Добавляем файл для базы данных
