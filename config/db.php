@@ -5,7 +5,7 @@ return [
     /*'dsn' => 'mysql:host=localhost;dbname=yii2basic',
     'username' => 'root',
     'password' => '',*/
-    'dsn' => 'sqlite:@app/db/sqlite.db',
+    'dsn' => 'sqlite:/var/www/toha/db/sqlite.db',
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)

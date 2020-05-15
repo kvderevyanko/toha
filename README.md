@@ -1,3 +1,6 @@
+# Видео
+    https://youtu.be/L9EJcON1wNs
+
 ## Клонируем репозиторий
     git clone https://github.com/kvderevyanko/toha.git .
 
@@ -73,3 +76,7 @@ sudo apt-get install php7.4-sqli (7.4 поменяй на свою версию,
 
 
 sudo chown -R www-data  db/sqlite.db
+
+
+## Главный файл 
+    views/site/index.php

@@ -29,7 +29,7 @@ $this->registerJs(<<<JS
 /* Начало блока */
 setInterval(function() {
   let device = 'alertvnx'; //имя устройства
-  let min = 5; //минимальное количество записей
+  let min = 2; //минимальное количество записей
   $.get(urlCheckDevice, {device:device, min:min}, function(data) {
       if(Number(data['count']) >= min) {
           createDeviceInfo(data);
@@ -38,7 +38,6 @@ setInterval(function() {
   }) 
 }, 5000); //Время между запросами в милисекундах
 /* Конец блока */
-
 
 
 $(".clearBlock").on('click', function() {
