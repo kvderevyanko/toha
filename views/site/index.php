@@ -18,16 +18,6 @@ $this->title = 'Главная';
         <!--Конец блока-->
 
 
-        <!--Начало блока-->
-        <div class="col-sm-6">
-            <div class="deviceBlock"  id="alertsecond">
-                <h4>Вторая камера</h4>
-                <div class="clearBlock btn btn-info">Очистить блок</div>
-                <div class="deviceInfo"></div>
-            </div>
-        </div>
-        <!--Конец блока-->
-
     </div>
 </div>
 <script>
@@ -47,20 +37,6 @@ setInterval(function() {
     console.log(data)
   }) 
 }, 5000); //Время между запросами в милисекундах
-/* Конец блока */
-
-
-/* Начало блока */
-setInterval(function() {
-  let device = 'alertsecond'; //имя устройства
-  let min = 5; //минимальное количество записей
-  $.get(urlCheckDevice, {device:device, min:min}, function(data) {
-      if(Number(data['count']) >= min) {
-          createDeviceInfo(data);
-      }
-    console.log(data)
-  }) 
-}, 4000); //Время между запросами в милисекундах
 /* Конец блока */
 
 
